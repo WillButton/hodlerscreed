@@ -24,6 +24,12 @@
 /* --- Don't need to modify below here --- */
 
 /* Default design values of the entire document */
+a:link {
+  color: var(--color-primary)
+}
+a:visited {
+  color: var(--color-secondary)
+}
 
 body {
   background: var(--background-color);

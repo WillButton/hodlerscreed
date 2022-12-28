@@ -214,6 +214,22 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <h2>Crypto 2022: WHEW!</h2>
+      <div className={styles.mainText}>
+        And with the pain, like most things, comes the opportunity to learn. We stand at a crossroads, between crypto anarchy and crypto
+        government. There is a third option, between lawlessness and overreaching laws limiting our actions:
+      </div>
+      <div className={styles.mainText}>
+        Responsibility
+      </div>
+      <div className={styles.mainText}>
+        It's this third option that we commemorate here with the 4 lessons learned. Ripped straight from the pages of
+        the <a href={'https://milkroad.com/'} target={'_blank'}>Milk Road</a>, we present these 4 lessons as an NFT, available for minting to signify to others that you too
+        felt the pain from 2022. And like the others holding this token, you are choosing to learn.
+      </div>
+      <div className={styles.mainText}>
+        Mint your own Hodler's Creed NFT to show that you, too have learned your lesson.
+      </div>
       <div className={styles.mintInfoContainer}>
         {isLoading ? (
           <p>Loading...</p>
@@ -223,9 +239,7 @@ const Home: NextPage = () => {
               {/* Title of your NFT Collection */}
               <h1>{contractMetadata?.name}</h1>
               {/* Description of your NFT Collection */}
-              <p className={styles.description}>
-                {contractMetadata?.description}
-              </p>
+              <p className={styles.description} dangerouslySetInnerHTML={{ __html: contractMetadata?.description }} />
             </div>
 
             <div className={styles.imageSide}>
@@ -317,13 +331,35 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      {/* Powered by thirdweb */}{" "}
-      <img
-        src="/logo.png"
-        alt="thirdweb Logo"
-        width={135}
-        className={styles.buttonGapTop}
-      />
+      <div className={styles.footer}>
+        {/* Built by Will Button */}
+        <a href={'https://twitter.com/0xWillButton'} target={'_blank'} rel={'noreferrer'}>
+          <img
+              src="/willbutton.png"
+              alt="Built by Will Button"
+              width={65}
+              className={styles.profileImage}
+          />
+        </a>
+        {/* Powered by thirdweb */}
+        <a href={'https://thirdweb.com/'} target={'_blank'} rel={'noreferrer'}>
+          <img
+              src="/logo.png"
+              alt="Built with thirdweb"
+              width={135}
+              className={styles.buttonGapTop}
+          />
+        </a>
+        {/* Build your own NFT */}
+        <a href={'https://www.youtube.com/devopsfordevelopers'} target={'_blank'} rel={'noreferrer'}>
+          <img
+              src="/yt-logo.png"
+              alt="Build your own NFT with thirdweb"
+              width={135}
+              className={styles.buttonGapTop}
+          />
+        </a>
+      </div>
     </div>
   );
 };
