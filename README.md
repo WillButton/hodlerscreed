@@ -1,49 +1,66 @@
-# Customizable Edition Drop Minting Page
+<!-- Project Badges -->
+![Build-badge]
+![Security-badge]
 
-In this template, we build a page where users can claim NFTs from the [Edition Drop](https://portal.thirdweb.com/pre-built-contracts/edition-drop) contract.
+<!-- Info -->
+# Hodler's Creed
 
-## Tools
+This is the repo for [Holder's Creed](https://www.hodlerscreed.com). Here you will find the code used to build and deploy 
+the site. 
 
-- [**Edition Drop**](https://portal.thirdweb.com/pre-built-contracts/edition-drop): Create a collection of ERC-1155 NFTs and release them to users under [claim conditions](https://portal.thirdweb.com/pre-built-contracts/edition-drop#minting--claiming-nfts).
-- [**React SDK**](https://docs.thirdweb.com/react): to enable users to connect their wallets with the [useMetamask](https://portal.thirdweb.com/react/react.usemetamask) hook, and access hooks such as [useNFTDrop](https://portal.thirdweb.com/react/react.usenftdrop) to interact with the NFT drop contract.
-- [**TypeScript SDK**](https://docs.thirdweb.com/typescript): to view the claimed supply, total supply, and mint NFTs from the drop.
+## About The Project
+The site is based on Next.js, using the [thirdweb edition-drop template](https://github.com/thirdweb-example/edition-drop). 
+It allows users to mint an ERC-1155 NFT on the Polygon network. The project is hosted using Cloudflare Pages.
 
-## Using This Repo
+### Built With
 
-To create your own version of this template, you can use the following steps:
+[![Nodejs-badge]][Nodejs-url]
+[![Nextjs-badge]][Nextjs-url]
+[![Thirdweb-badge]][Thirdweb-url]
+[![Polygon-badge]][Polygon-url]
 
-Run this command from the terminal to clone this project:
+## Getting Started
 
-```bash
-npx thirdweb create --template edition-drop
-```
+To get a local copy up and running, follow these steps:
 
-### 1. Deploy Your Own Edition Drop on thirdweb
+- Clone this repo: `git clone git@github.com:WillButton/hodlerscreed.git`
+- Install dependencies using the yarn package manager: `yarn`
+- Create your own edition drop contract using the thirdweb [dashboard](https://thirdweb.com/dashboard)
+- Update [pages/index.tsx](pages/index.tsx#20) with your contract address
+- Run the development server locally with `yarn dev`
+- Run the test suite with `npm run test`
 
-Head to the [dashboard](https://thirdweb.com/dashboard) and create your own **Edition Drop** contract.
+## Usage
+You can use this project to learn how to build professional-grade Web3 apps, or to launch your own site that allows 
+users to mint your ERC-1155 NFT.
 
-You can learn how to do that with our guide [Release an NFT drop on your own site without writing any code](https://portal.thirdweb.com/guides/release-an-nft-drop-with-no-code#create-a-drop-contract).
+## Contributing
 
-Be sure to configure a **name**, **description**, and **image** for your NFT drop in the dashboard.
+To contribute to the project:
+- Clone the project
+- Create a feature branch beginning with your name (i.e. `rekibnikufesin/add-some-feature`)
+- Create or update tests to reflect the work done
+- Commit your changes: `git commit -m 'Added feature X`
+- Push to the branch: `git push origin rekibnikufesin/add-some-feature`
+- Open a pull request
+- After review and approval, changes are deployed immediately
 
-### 2. Configure the styles to your branding
+## Contact
+[![Twitter-badge]][Twitter-url]
+[![Discord-badge]][Discord-url]
 
-You can fully customize the colors and style of this template by editing the values in the [`globals.css`](/styles/globals.css) file.
-
-You can configure:
-
-- The color of the background with `--background-color`
-- The color of the text with `--text-color`
-- The color of the button (is a gradient from primary to secondary color) with `--color-primary` and `--color-secondary`
-- The font with `--font`
-- The border colors with `--border-color`
-
-### 3. Plug in your Edition Drop contract address
-
-Replace the value of the `myEditionDropContractAddress` inside [`index.tsx`](/pages/index.tsx) with your Edition Drop contract address (you can find in the dashboard).
-
----
-
-## Join our Discord!
-
-For any questions, suggestions, join our Discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+<!-- Markdown Links and Images -->
+[Build-badge]: https://github.com/WillButton/hodlerscreed/actions/workflows/ci.yml/badge.svg
+[Security-badge]: https://github.com/WillButton/hodlerscreed/actions/workflows/security.yml/badge.svg
+[Nodejs-badge]: https://img.shields.io/badge/node.js-16.x-informational?logo=node.js
+[Nodejs-url]: https://nodejs.org/en/
+[Nextjs-badge]: https://img.shields.io/badge/Nextjs-12.x-informational?logo=next.js
+[Nextjs-url]: https://nextjs.org/
+[Thirdweb-badge]: https://img.shields.io/badge/Thirdweb-3-informational
+[Thirdweb-url]: https://thirdweb.com/
+[Polygon-badge]: https://img.shields.io/badge/Polygon-POSv1-informational
+[Polygon-url]: https://polygon.technology
+[Twitter-badge]: https://img.shields.io/twitter/follow/0xwillbutton?label=Follow
+[Twitter-url]: https://twitter.com/0xWillButton
+[Discord-badge]: https://img.shields.io/badge/Discord-28-informational?logo=Discord&style=social
+[Discord-url]: https://devopsfordevelopers.io/discord
