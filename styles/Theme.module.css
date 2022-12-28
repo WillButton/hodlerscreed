@@ -1,7 +1,17 @@
 .container {
-  margin-top: 96px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.footer {
+  margin-top: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -44,6 +54,13 @@
   align-items: center;
   width: 45%;
   height: 100%;
+}
+
+.mainText {
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  padding: 24px;
 }
 
 .description {
@@ -127,6 +144,12 @@
   margin-top: 32px;
 }
 
+.profileImage {
+  margin-top: 32px;
+  margin-right: 32px;
+  border-radius: 50%;
+}
+
 .quantityContainer {
   display: flex;
   flex-direction: row;
@@ -169,6 +192,10 @@
   }
 
   .infoSide {
+    width: 100%;
+  }
+
+  .mainText {
     width: 100%;
   }
 
