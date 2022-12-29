@@ -5,8 +5,8 @@ import Head from "next/head";
 import ThirdwebGuideFooter from "../components/GitHubLink";
 
 // This is the chainId your dApp will work on.
-const activeChainId =
-    (process.env.NEXT_CHAINID ? parseInt(`ChainId.${process.env.NEXT_CHAINID}`) : ChainId.Mumbai);
+// @ts-ignore
+const activeChainId = parseInt(process.env.NEXT_CHAINID) || ChainId.Mumbai;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
