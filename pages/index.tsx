@@ -223,12 +223,12 @@ const Home: NextPage = () => {
         Responsibility
       </div>
       <div className={styles.mainText}>
-        It's this third option that we commemorate here with the 4 lessons learned. Ripped straight from the pages of
-        the <a href={'https://milkroad.com/'} target={'_blank'}>Milk Road</a>, we present these 4 lessons as an NFT, available for minting to signify to others that you too
+        It&apos;s this third option that we commemorate here with the 4 lessons learned. Ripped straight from the pages of
+        the <a href={'https://milkroad.com/'} target={'_blank'} rel={'noreferrer'}>Milk Road</a>, we present these 4 lessons as an NFT, available for minting to signify to others that you too
         felt the pain from 2022. And like the others holding this token, you are choosing to learn.
       </div>
       <div className={styles.mainText}>
-        Mint your own Hodler's Creed NFT to show that you, too have learned your lesson.
+        Mint your own Hodler&apos;s Creed NFT to show that you, too have learned your lesson.
       </div>
       <div className={styles.mintInfoContainer}>
         {isLoading ? (
