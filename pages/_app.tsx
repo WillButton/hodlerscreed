@@ -6,7 +6,7 @@ import ThirdwebGuideFooter from "../components/GitHubLink";
 
 // This is the chainId your dApp will work on.
 // @ts-ignore
-const activeChainId = parseInt(process.env.NEXT_CHAINID) || ChainId.Mumbai;
+const activeChainId = parseInt(process.env.NEXT_PUBLIC_CHAINID) || ChainId.Mumbai;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
