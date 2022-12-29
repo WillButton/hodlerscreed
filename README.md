@@ -19,6 +19,13 @@ It allows users to mint an ERC-1155 NFT on the Polygon network. The project is h
 [![Thirdweb-badge]][Thirdweb-url]
 [![Polygon-badge]][Polygon-url]
 
+
+### Polygon Mainnet Contract:
+[![Prod-contract-badge]][Prod-contract-url]
+
+### Polygon Testnet Contract:
+[![Testnet-contract-badge]][Testnet-contract-url]
+
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
@@ -64,3 +71,7 @@ To contribute to the project:
 [Twitter-url]: https://twitter.com/0xWillButton
 [Discord-badge]: https://img.shields.io/badge/Discord-28-informational?logo=Discord&style=social
 [Discord-url]: https://devopsfordevelopers.io/discord
+[Prod-contract-badge]: https://badges.thirdweb.com/contract?address=0xE0d804Ad250BcC9f7175e9aB1e1aF6a76E2426F7&theme=dark&chainId=137
+[Prod-contract-url]: https://thirdweb.com/polygon/0xE0d804Ad250BcC9f7175e9aB1e1aF6a76E2426F7?utm_source=contract_badge
+[Testnet-contract-badge]: https://badges.thirdweb.com/contract?address=0x3C1975e752916a18F277E20a50DbE274623F84ac&theme=dark&chainId=80001
+[Testnet-contract-url]: https://thirdweb.com/mumbai/0x3C1975e752916a18F277E20a50DbE274623F84ac?utm_source=contract_badge
