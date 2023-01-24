@@ -12,7 +12,7 @@
     "ci": "yarn install --immutable --immutable-cache --check-cache"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "^3",
+    "@thirdweb-dev/react": "^3.6.9",
     "@thirdweb-dev/sdk": "^3",
     "ethers": "^5.6.8",
     "next": "^12.1.6",
